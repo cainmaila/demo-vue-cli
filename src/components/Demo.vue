@@ -2,20 +2,29 @@
   <div id="p2">
     DEMO
     <div>{{test}}</div>
-    <c3 :txt2="item" v-for="item in list" ></c3>
+    <btn @btn_ent="btnClick"></btn>
+    <my-first-tmp :txt2="item"  imgpath="https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" v-for="item in list" ></my-first-tmp>
   </div>
 </template>
 <script>
-import c3 from "@/components/d2";
+import myFirstTmp from "@/components/d2";
+import btn from "@/components/btn";
 export default {
   data: function() {
     return {
       test: "Cain!",
-      list: ["11111", "2222222", "3333333"]
+      list: ["11111"]
     };
   },
   components: {
-    c3
+    myFirstTmp,
+    btn
+  },
+  methods: {
+    btnClick(val, val2) {
+      console.log(val);
+      console.log(val2);
+    }
   }
 };
 </script>
