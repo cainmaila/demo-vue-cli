@@ -2,11 +2,13 @@
   <div>
     <calc-from @calc="onCalc"></calc-from>
     <log id="log" :calc-val="calcVal"></log>
+    <!-- <log id="log">{{calcVal}}</log> -->
   </div>
 </template>
 <script>
 import CalcFrom from "@/components/CalcFrom";
 import Log from "@/components/Log";
+// import Log from "@/components/LogSlot";
 export default {
   data() {
     return {

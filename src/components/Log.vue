@@ -1,6 +1,6 @@
 <template>
   <div>
-     計算結果: {{calcVal}}
+      計算結果: {{calcVal}}
   </div>
 </template>
 <script>
