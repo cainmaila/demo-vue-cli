@@ -1,7 +1,7 @@
 <template>
   <div>
     <calc-from @calc="onCalc"></calc-from>
-    <log :calc-val="calcVal"></log>
+    <log id="log" :calc-val="calcVal"></log>
   </div>
 </template>
 <script>
@@ -25,5 +25,11 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-
+#log {
+  height: 200px;
+  margin-top: 50px;
+  line-height: 200px;
+  background: #eee;
+  font-size: 40px;
+}
 </style>
