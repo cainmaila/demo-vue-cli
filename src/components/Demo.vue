@@ -3,7 +3,7 @@
     DEMO
     <div>{{test}}</div>
     <btn @btn_ent="btnClick"></btn>
-    <my-first-tmp :txt2="item"  imgpath="https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" v-for="item in list" ></my-first-tmp>
+    <my-first-tmp :txt2="item"  imgpath="https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" v-for="(item,index) in list" key="index"></my-first-tmp>
   </div>
 </template>
 <script>
